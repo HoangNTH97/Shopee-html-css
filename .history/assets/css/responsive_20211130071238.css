@@ -1,0 +1,45 @@
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+  :root {
+    --header_height: 68px !important;
+    --navbar-height: 0px !important;
+  }
+
+  .hide-on-mobile-tablet {
+    display: none !important;
+  }
+
+  .header {
+    position: fixed;
+  }
+
+  .header__cart-infomation {
+    position: fixed !important;
+    left: 0 !important;
+    top: var(--header_height) !important;
+    width: 100% !important;
+    z-index: 100 !important;
+  }
+
+  .header__cart-infomation::after {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .header__cart {
+    width: 60px !important;
+    text-align: right;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
